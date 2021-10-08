@@ -19,12 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env(
     DEBUG=(bool, True),
     SECRET_KEY=(str, 'secret'),
-    SQL_ENGINE=(str, 'django.db.backends.postgresql'),
-    SQL_DATABASE=(str, 'test'),
-    SQL_USER=(str, 'postgres'),
-    SQL_PORT=(int, 5432),
-    SQL_HOST=(str, 'localhost'),
-    SQL_PASSWORD=(str, 'postgres'),
     SEND_TO_SENTRY=(bool, True),
     CELERY_BROKER_URL=(str, 'redis://localhost:6379/1')
 )
