@@ -1,0 +1,14 @@
+[
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$4XR0GqfnT8uS6IaBllOgHY$88UKoKWRpiVCG9r6v70c2mWibToiCouwQMLq+WgbO2Q=",
+      "last_login": null,
+      "email": "test@test.com",
+      "is_admin": true,
+      "first_name": "test",
+      "last_name": null
+    }
+  }
+]

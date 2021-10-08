@@ -1,0 +1,8 @@
+from api.core.mixins import BaseModelViewSet
+from api.{{model_name_plural_lower}}.models import {{model_name}}
+from api.{{model_name_plural_lower}}.serializers import {{model_name}}Serializer
+
+
+class {{model_name}}ViewSet(BaseModelViewSet):
+    queryset = {{model_name}}.objects.all()
+    serializer_class = {{model_name}}Serializer

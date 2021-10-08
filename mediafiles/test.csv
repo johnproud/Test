@@ -1,0 +1,6 @@
+first_name,last_name,sex,birth_date,status,native_language,phone_number,email,notes,optional_1,optional_2
+test,testovici,m,2021-09-15,active,ro,3732079597,test@testovici.test,test,1,1
+test,testovici,m,1998-09-29,active,ro,373479597,test@testovici.test,test,1,1
+test,testovici,m,1995-09-06,active,ro,37361379597,test@testovici.test,test,1,1
+test,testovici,m,1991-09-17,active,ro,373610729597,test@testovici.test,test,1,1
+test,testovici,male,2001-09-17,married,ro,373613210795927,test@testovici.test,test,1,1

@@ -1,0 +1,7 @@
+from django.db import models
+
+from api.core.mixin import BaseModelMixin
+
+
+class {{model_name}}(BaseModelMixin):
+{{fields_for_model}}

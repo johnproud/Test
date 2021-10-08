@@ -1,0 +1,18 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$VXPniCmPFYtR$IGJG99FWJmbZ+9Q9h2n2KgTW+gF5XR9mo5K+gu1W4JY=",
+      "last_login": "2020-06-25T17:33:50Z",
+      "email": "info@dots.md",
+      "image": "1",
+      "phone": "1",
+      "is_staff": true,
+      "date_joined": "2020-05-12T14:41:11Z",
+      "first_name": "1",
+      "last_name": null,
+      "job_title": null
+    }
+  }
+]
