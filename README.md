@@ -1,6 +1,6 @@
 # Set up
 ## Commands to install virtual environment:
-
+* python 3.9
 * `pip install poetry`
 * `poetry install`
 
