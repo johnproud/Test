@@ -13,7 +13,7 @@
 * django.db.backends.postgresql_psycopg2 ----> PostgreSql
 
 ### 2. Next you should migrate db structure and for this you have to use `python manage.py migrate`
-### 3. If you want to have default admin user for this app then you should run `python manage.py loaddata seed/users.json`
+### 3. If you want to have default admin user for this app then you should run `python manage.py loaddata seeds/users.json`
 ### Credentials for this user are:
     * email: test@test.com
     * password: test
