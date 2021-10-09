@@ -26,11 +26,17 @@ class GameViewSet(BaseModelViewSet):
             serializer_class=ReturnGameResultSerializer,
             serializer_create_class=GameResultSerializer)
     def play(self, request):
+        """
+           Endpoint for start to play a game.
+        """
         return self.create(request)
 
     @action(detail=True, queryset=User.objects.all(), methods=['GET'],
             serializer_class=UserRankSerializer)
     def rank(self, request, **kwargs):
+        """
+           Rank for certain game. will get users which played this game ordered by points yarned
+        """
         users = User.objects.alias(
             points=Subquery(GameResult.objects.filter(
                 game=kwargs['pk'], is_active=True,
@@ -42,6 +48,9 @@ class GameViewSet(BaseModelViewSet):
     @action(detail=False, queryset=User.objects.all(), methods=['GET'], url_path='rank',
             serializer_class=UserRankSerializer)
     def rank_for_all(self, request):
+        """
+           Rank for all games. This endpoint will get best users for all games
+        """
         users = User.objects.alias(
             points=Subquery(GameResult.objects.filter(
                 is_active=True,
