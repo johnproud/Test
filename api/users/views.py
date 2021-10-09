@@ -21,6 +21,9 @@ class CurrentUserViewSet(
     permission_classes_by_action = {"default": [IsAuthenticated]}
 
     def list(self, request, *args, **kwargs):
+        """ 
+           This endpoint will return current logged user
+        """
         return Response(UserSerializer(request.user).data)
 
 
