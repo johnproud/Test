@@ -21,3 +21,5 @@
 ### 4. In order to start app you should run `python manage.py runserver`
 
 ### Swagger url: `http://localhost:8000` with documentation of endpoints
+
+### For authentication I used simple jwt. In order to successfully login you should have in header `Authorization: Bearer {token}`
