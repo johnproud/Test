@@ -17,6 +17,7 @@ class CurrentUserViewSet(
     UpdateBaseModelMixin,
     GenericBaseViewSet
 ):
+    queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes_by_action = {"default": [IsAuthenticated]}
 
